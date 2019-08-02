@@ -34,6 +34,7 @@ describe('index', () => {
         displayRepositories.call(resp)
         el = document.getElementById("repositories")
         expect(el.innerHTML).toMatch(/Hello-World/)
+        debugger
         expect(el.innerHTML).toMatch(/octocat/)
         expect(el.innerHTML).toMatch(/https:\/\/github.com\/octocat\/Hello-World/)
       })
